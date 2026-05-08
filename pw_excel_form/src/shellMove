@@ -5,6 +5,7 @@ while ($true) {
     $moveX = $rng.Next(-3, 3)
     $moveY = $rng.Next(-3, 3)
     [System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point(($pos.X + $moveX), ($pos.Y + $moveY))
-    Start-Sleep -Seconds $rng.Next(45, 90)
+    Start-Sleep -Seconds 2
     [System.Windows.Forms.Cursor]::Position = $pos
+    Start-Sleep -Seconds $rng.Next(45, 90)
 }
